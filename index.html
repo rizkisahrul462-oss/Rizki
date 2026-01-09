@@ -1,0 +1,191 @@
+<!-- =========================
+FILE: index.html
+========================= -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Train Smart, Live Strong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#222}
+    header{background:#000;color:#fff;padding:20px;position:sticky;top:0}
+    nav a{color:#f7f1f1;margin:0 10px;text-decoration:none;font-weight:bold}
+    section{padding:60px 10%}
+    h2{text-align:center;margin-bottom:20px}
+    .hero{background:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') center/cover;height:90vh;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
+    .hero h1{font-size:48px;text-transform:uppercase}
+    .stats{display:flex;justify-content:space-around;text-align:center}
+    .stat{font-size:24px;font-weight:bold}
+    .team{display:flex;gap:20px;justify-content:center}
+    .team img{width:200px;border-radius:10px}
+    table{width:100%;border-collapse:collapse}
+    table,th,td{border:1px solid #f8f6f6}
+    th,td{padding:10px;text-align:center}
+    footer{background:#111;color:#f7f1f1;text-align:center;padding:20px}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#program">Program</a>
+    <a href="reservation.html">Reservasi</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1>Train Smart, Live Strong</h1>
+    <p>Pusat fitness dan wellness untuk generasi milenial dan Gen Z.Bergabunglah dengan komunitas kami sekarang!</p>
+  </div>
+</section>
+
+<section id="stats">
+  <h2>Quick Stats</h2>
+  <div class="stats">
+    <div class="stat">2<br/>Cabang</div>
+    <div class="stat">3000+<br/>Member</div>
+    <div class="stat">4.9<br/>Rating</div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <h3>Company Story</h3>
+  <p>Kami adalah pusat kebugaran modern yang berfokus pada hasil nyata, kenyamanan, dan komunitas yang saling mendukung.</p>
+
+  <h3>Visi & Misi</h3>
+  <p><b>Visi:</b> Menjadi gym terbaik untuk gaya hidup sehat berkelanjutan.<br/>
+     <b>Misi:</b> Memberikan program latihan berkualitas dengan pelatih profesional.</p>
+
+  <h3>Our Team</h3>
+  <div class="team">
+    <img src="https://images.unsplash.com/photo-1594737625785-c65a73b22f7a" alt="Trainer 1" />
+    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Trainer 2" />
+    <img src="https://images.unsplash.com/photo-1604480133435-25b86862d276" alt="Trainer 3" />
+  </div>
+
+  <h3>Our Values</h3>
+  <ul>
+    <li>Disiplin</li>
+    <li>Konsistensi</li>
+    <li>Healthy Lifestyle</li>
+    <li>Community</li>
+  </ul>
+</section>
+
+<section id="program">
+  <h2>Program & Services</h2>
+  <table>
+    <tr>
+      <th>Program</th>
+      <th>Durasi</th>
+      <th>Level</th>
+    </tr>
+    <tr>
+      <td>Strength Training</td>
+      <td>60 Menit</td>
+      <td>Beginner - Advanced</td>
+    </tr>
+    <tr>
+      <td>Cardio Burn</td>
+      <td>45 Menit</td>
+      <td>All Level</td>
+    </tr>
+    <tr>
+      <td>Yoga & Mobility</td>
+      <td>60 Menit</td>
+      <td>Beginner</td>
+    </tr>
+  </table>
+
+  <h3>Signature Programs</h3>
+  <ul>
+    <li>12-Week Body Transformation</li>
+    <li>Personal Coaching Elite</li>
+    <li>Community Bootcamp</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 SmartFit Gym</p>
+</footer>
+
+</body>
+</html>
+
+
+<!-- =========================
+FILE: reservation.html
+========================= -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reservasi Kelas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;padding:20px}
+    form{background:#fff;padding:20px;max-width:600px;margin:auto;border-radius:8px}
+    label{display:block;margin-top:10px}
+    input,select,textarea,button{width:100%;padding:8px;margin-top:5px}
+    button{background:#000;color:#fff;border:none;margin-top:20px}
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center">Form Reservasi</h2>
+
+<form>
+  <label>Nama Lengkap*</label>
+  <input type="text" required />
+
+  <label>Email</label>
+  <input type="email" />
+
+  <label>Nomor HP</label>
+  <input type="tel" />
+
+  <label>Tanggal Reservasi</label>
+  <input type="date" />
+
+  <label>Jam</label>
+  <input type="time" />
+
+  <label>Jenis Program</label>
+  <select>
+    <option>Strength Training</option>
+    <option>Cardio Burn</option>
+    <option>Yoga</option>
+  </select>
+
+  <label>Pilih Cabang</label>
+  <select>
+    <option>Cabang Jakarta</option>
+    <option>Cabang Bandung</option>
+  </select>
+
+  <label>Catatan Khusus</label>
+  <textarea></textarea>
+
+  <label>
+    <input type="checkbox" required /> Saya mengkonfirmasi data sudah benar
+  </label>
+
+  <button type="submit">Kirim Reservasi</button>
+</form>
+
+<section style="max-width:600px;margin:30px auto">
+  <h3>Contact Support</h3>
+  <p>Email: support@gym.com<br/>WA: 0812-3456-7890</p>
+
+  <h3>FAQ</h3>
+  <p><b>Q:</b> Apakah bisa trial gratis?<br/>
+     <b>A:</b> Ya, tersedia trial 1 hari.</p>
+</section>
+
+</body>
+</html>
